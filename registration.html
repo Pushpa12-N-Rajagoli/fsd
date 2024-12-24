@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1488998427799-e3362cec87c3?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym9va3MlMjBhbmQlMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 40px;
+            width:100%;
+            backdrop-filter: blur(1px);
+        }
+
+        .main {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            backdrop-filter: blur(75px);
+            background-color: transparent;
+        }
+
+        .main h2 {
+            color: #8356f6;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #8356f6;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Registration Form</h2>
+        <form action="">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required />
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"/>
+
+            <label for="repassword">Re-type Password:</label>
+            <input type="password" id="repassword" name="repassword" required />
+
+            <label for="mobile">Contact:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="10" required />
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+                <option value="other">
+                    Other
+                </option>
+            </select>
+            <div class="forget">
+                <label for=""><input type="checkbox">Remember Me</label>
+                <a href="#">Forget Password</a>
+            </div>
+            <button type="submit" onclick="alert('Successfully login')">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

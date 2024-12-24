@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      
+      
+    
+    <style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 10%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://e1.pxfuel.com/desktop-wallpaper/118/299/desktop-wallpaper-droidviews-s3.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 40px;
+            width:100%;
+            backdrop-filter: blur(1px);
+        }
+
+        .main {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            backdrop-filter: blur(75px);
+            background-color: transparent;
+        }
+
+        .main h2 {
+            color: #8356f6;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #8356f6;
+            color: white;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+       </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Send message</h2>
+        <form action="">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required />
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"/>
+
+            <label for="repassword">Re-type Password:</label>
+            <input type="password" id="repassword" name="repassword" required />
+
+            <label for="mobile">Contact:</label>
+            <input type="text" id="mobile" name="mobile" maxlength="10" required />
+
+           
+            <div class="forget">
+                
+                <a href="#">Forget Password</a>
+            </div>
+            <button type="submit" onclick="alert('Successfully login')">
+                Send
+            </button>
+        </form>
+    </div>
+          <section>
+          
+         <div class="map">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243323.7096342433!2d-74.00601501571757!3d40.71277531609944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a151d8a7d47%3A0x7b5287f9de4f670!2sNew%20York%20City%2C%20NY!5e0!3m2!1sen!2sus!4v1636145202747!5m2!1sen!2sus"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+</div></section>
+        
+                  
+</body>
+</html>
